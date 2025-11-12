@@ -1,9 +1,11 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 interface FeatureCardProps {
-  icon: string;
+  icon: string | StaticImageData;
   title: string;
   description: string;
+  gradient: string;
+  delay?: number;
   footnote?: string;
 }
 

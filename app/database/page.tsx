@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Database, Table, Key, Link, Users, MessageSquare, FileText, Shield, UserPlus, Settings } from 'lucide-react';
 
 export default function XENDDatabaseSchema() {
-  const [selectedTable, setSelectedTable] = useState(null);
+  const [selectedTable, setSelectedTable] = useState<(typeof tables)[0] | null>(null);
 
   const tables = [
     {

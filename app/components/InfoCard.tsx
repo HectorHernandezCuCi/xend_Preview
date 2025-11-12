@@ -1,7 +1,7 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 interface InfoCardProps {
-    image: string;
+    image: string | StaticImageData;
     title: string;
     description: string;
     index: number;

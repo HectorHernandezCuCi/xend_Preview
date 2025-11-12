@@ -3,11 +3,8 @@
 import Image from "next/image";
 import PhoneGif from "@/assets/gifs/PhoneGif.gif";
 import UserIcon from "@/assets/icons/user.png";
-import ConnectionIcon from "@/assets/icons/connection.png";
-import GroupIcon from "@/assets/icons/group.png";
-import CustomIcon from "@/assets/icons/custom.png";
 import FeatureCard from "./FeatureCard";
-import { motion } from "framer-motion";
+import { motion, Variants, easeOut } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const FeatureSection = () => {
@@ -26,14 +23,14 @@ const FeatureSection = () => {
     },
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: 30 },
     visible: {
       opacity: 1,
       y: 0,
       transition: {
         duration: 0.6,
-        ease: "easeOut",
+        ease: easeOut,
       },
     },
   };
