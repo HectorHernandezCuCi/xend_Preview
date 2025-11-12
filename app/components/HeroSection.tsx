@@ -21,9 +21,6 @@ const HeroSection = () => {
         <p className="text-lg md:text-xl max-w-2xl mx-auto mb-6">
             Transformamos la manera en que escuelas, alumnos y docentes se comunican.
         </p>
-        <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105">
-            Empezar ahora
-        </button>
       </div>
 
     </section>
